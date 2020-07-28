@@ -8,10 +8,12 @@
   "author": "Aquaticat",
   "license": "GPL-3.0-or-later",
   "private": true,
-  "dependencies": {
-    "sass": "^1.26.10"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "2.21.2",
+    "sass": "^1.26.10",
     "stylelint": "^13.6.1",
     "stylelint-config-sass-guidelines": "^7.0.0"
   }
