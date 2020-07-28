@@ -1,6 +1,7 @@
 {
   "name": "site-frontend",
   "version": "0.0.1",
+  "type": "module",
   "description": "Frontend code of my website.",
   "main": "index.js",
   "repository": "https://github.com/Aquaticat/site-frontend.git",
