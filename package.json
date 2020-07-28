@@ -1,0 +1,10 @@
+{
+  "name": "site-frontend",
+  "version": "0.0.1",
+  "description": "Frontend code of my website.",
+  "main": "index.js",
+  "repository": "https://github.com/Aquaticat/site-frontend.git",
+  "author": "Aquaticat",
+  "license": "GPL-3.0-or-later",
+  "private": true
+}
