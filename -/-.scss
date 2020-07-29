@@ -4,5 +4,8 @@
 
 @use '-/logo-text';
 
+@use '-/header';
+@use '-/header/__links-list';
+
 @use '-/links-list';
 @use '-/links-list/__link';
