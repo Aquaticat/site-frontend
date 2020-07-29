@@ -8,6 +8,9 @@
   "author": "Aquaticat",
   "license": "GPL-3.0-or-later",
   "private": true,
+  "scripts": {
+    "sass-watch": "sass --watch -/-.scss:-/-.css"
+  },
   "dependencies": {},
   "devDependencies": {
     "eslint": "^7.5.0",
