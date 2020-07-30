@@ -3,17 +3,22 @@
 .header {
   box-sizing: content-box;
   max-width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-
-  padding-top: 16px;
+  $auto: auto;
+  margin: {
+    left: $auto;
+    right: $auto;
+  }
+  $minimum-horizontal-padding: 16px;
+  padding: {
+    left: $minimum-horizontal-padding;
+    right: $minimum-horizontal-padding;
+    top: 16px;
+  }
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   column-gap: 2rem;
   row-gap: 1rem;
 }

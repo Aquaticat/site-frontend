@@ -1,7 +1,11 @@
 .links-list__link {
-  font-size: 1.25rem;
+  font: {
+    family: Arial, sans-serif;
+    size: 1.25rem;
+  }
   letter-spacing: 0.05em;
-  font-family: Arial, sans-serif;
-  text-transform: capitalize;
-  text-decoration-skip-ink: auto;
+  text: {
+    decoration-skip-ink: auto;
+    transform: capitalize;
+  }
 }
