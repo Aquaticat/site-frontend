@@ -1,3 +1,6 @@
+@use '__item';
+@use '__link';
+
 .links-list {
   display: flex;
   flex-wrap: wrap;
