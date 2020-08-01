@@ -1,0 +1,8 @@
+.body__background-for-header {
+  top: calc(-832px + 10vw);
+  right: calc(-544px + (100vw - 768px) / 2);
+  transform: rotate(-30deg);
+  @media (min-width: 632px) and (max-width: 1024px) {
+    visibility: hidden;
+  }
+}

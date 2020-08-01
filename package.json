@@ -9,7 +9,7 @@
   "license": "GPL-3.0-or-later",
   "private": true,
   "scripts": {
-    "sass-watch": "sass --watch -/-.scss:-/-.css"
+    "sass-watch": "sass --watch -/index.scss:-/index.css"
   },
   "dependencies": {},
   "devDependencies": {

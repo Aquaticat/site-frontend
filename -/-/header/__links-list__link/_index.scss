@@ -1,4 +1,10 @@
 .header__links-list__link {
-  color: #f2f0f5;
+  color: #fff;
   text-decoration-line: underline;
+}
+
+@media (max-width: 1024px) {
+  .header__links-list__link {
+    color: #7f4ce5;
+  }
 }

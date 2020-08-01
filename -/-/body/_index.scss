@@ -1,0 +1,10 @@
+@use '__background';
+@use '__background-for-empty-space-on-the-left';
+@use '__background-for-header';
+@use '__background-item';
+@use '__content';
+
+.body {
+  margin: 0;
+  overflow: hidden;
+}

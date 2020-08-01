@@ -1,3 +1,4 @@
+@use '__links-list__item';
 @use '__links-list__link';
 
 .header {
@@ -8,17 +9,34 @@
     left: $auto;
     right: $auto;
   }
-  $minimum-horizontal-padding: 16px;
-  padding: {
-    left: $minimum-horizontal-padding;
-    right: $minimum-horizontal-padding;
-    top: 16px;
+
+  @media (max-width: 704px) {
+    $minimum-horizontal-padding: 32px;
+    padding: {
+      left: $minimum-horizontal-padding;
+      right: $minimum-horizontal-padding;
+      top: 64px;
+    }
   }
+
+  @media (min-width: 704px) and (max-width: 1024px) {
+    $minimum-horizontal-padding: 48px;
+    padding: {
+      left: $minimum-horizontal-padding;
+      right: $minimum-horizontal-padding;
+      top: 48px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 32px;
+  }
+
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  column-gap: 2rem;
-  row-gap: 1rem;
+  column-gap: 8rem;
+  row-gap: 2rem;
 }
