@@ -39,4 +39,6 @@
   justify-content: space-between;
   column-gap: 8rem;
   row-gap: 2rem;
+  // TODO: Just realized Safari does not support column-gap and row-gap.
+  //  Have to write some not-so-good workarounds for Safari and Safari only.
 }
