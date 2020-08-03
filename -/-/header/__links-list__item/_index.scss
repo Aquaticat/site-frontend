@@ -1,5 +1,5 @@
-@media (min-width: 1024px) {
-  .header__links-list__item {
+.header__links-list__item {
+  @media (min-width: 1024px) {
     background: {
       image: radial-gradient(closest-side, transparentize(#7f4ce5, 0.6), transparentize(#7f4ce5, 1));
       position-y: 4px;
