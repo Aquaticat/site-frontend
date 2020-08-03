@@ -1,0 +1,14 @@
+.body__main {
+  max-width: 768px;
+  $auto: auto;
+  margin: {
+    left: $auto;
+    right: $auto;
+  }
+  $minimum-horizontal-padding: 32px;
+  padding: {
+    left: $minimum-horizontal-padding;
+    right: $minimum-horizontal-padding;
+    top: 64px;
+  }
+}

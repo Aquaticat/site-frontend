@@ -11,12 +11,14 @@
 <!-- Add empty script tag to prevent FOUC in Firefox. -->
 <script>void (0);</script>
 
-<div class="body__background" aria-hidden="true">
+<div class="background body__background" aria-hidden="true">
   <img
-      class="body__background-item body__background-for-header"
+      class="background__item body__background-item
+         body__background-for-header"
       src="-/body/__background-for-header/-.svg" alt=""
-  ><img
-      class="body__background-item body__background-for-empty-space-on-the-left"
+  >
+  <img
+      class="background__item body__background-item body__background-for-empty-space-on-the-left"
       src="-/body/__background-for-empty-space-on-the-left/-.svg" alt=""
   >
 </div>
@@ -56,6 +58,42 @@ the front of background. -->
       </li>
     </ul>
   </header>
+  <main class="body__main">
+    <h2 class="h2">featured projects</h2>
+    <div class="card">
+      <div class="background card__background" aria-hidden="true">
+        <div class="background__item card__background-item card__background-center"></div>
+        <div class="background__item card__background-item card__background-left"></div>
+        <div class="background__item card__background-item card__background-bottom"></div>
+      </div>
+      <div class="card__content">
+        <img
+            class="card__icon"
+            src="-/card/__icon/outerrobang.svg" alt=""
+        >
+        <h3 class="card__title">Outerrobang</h3>
+        <p class="card__description">Random number generator, list randomizer etc.
+                                     Its name comes from “Interrobang”
+        </p>
+        <div class="card__actions">
+          <button class="button card__action">
+            <img
+                class="button__icon card__action-icon card__action-icon-github"
+                src="-/card/__action-icon/github.svg" alt=""
+            />
+            <span class="button__text card__action-text">github repository</span>
+          </button>
+          <button class="button card__action">
+            <img
+                class="button__icon card__action-icon card__action-icon-documentation"
+                src="-/card/__action-icon/documentation.svg" alt=""
+            />
+            <span class="button__text card__action-text">view documentation</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>
 </body>
 </html>
