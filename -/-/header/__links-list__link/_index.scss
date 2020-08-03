@@ -1,10 +1,14 @@
 .header__links-list__link {
-  color: #fff;
-  text-decoration-line: underline;
-}
-
-@media (max-width: 1024px) {
-  .header__links-list__link {
-    color: #7f4ce5;
+  @media (min-width: 1024px) {
+    color: #fff;
   }
+  @media (max-width: 1024px) {
+    color: #665c70;
+
+    &:hover {
+      color: #7f4cb2;
+    }
+    transition: color 0.2s;
+  }
+  text-decoration-line: underline;
 }

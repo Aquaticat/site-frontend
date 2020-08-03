@@ -54,15 +54,23 @@
   }
 }
 .header__links-list__link {
-  color: #fff;
   text-decoration-line: underline;
 }
-
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .header__links-list__link {
-    color: #7f4ce5;
+    color: #fff;
   }
 }
+@media (max-width: 1024px) {
+  .header__links-list__link {
+    color: #665c70;
+    transition: color 0.2s;
+  }
+  .header__links-list__link:hover {
+    color: #7f4cb2;
+  }
+}
+
 .header {
   box-sizing: content-box;
   max-width: 768px;
