@@ -7,7 +7,7 @@
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
-.idea/**/dictionaries
+#.idea/**/dictionaries # Commented out because the dictionary is not user-specific in this project.
 .idea/**/shelf
 
 # Generated files
@@ -195,3 +195,11 @@ dist
 *.sass.map
 *.scss.map
 
+### Custom
+
+# sass-watch generated files
+*.css
+
+# non-necessary IntelliJ idea config files
+.idea/misc.xml
+.idea/.gitignore
