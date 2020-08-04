@@ -20,7 +20,7 @@
   background-color: #fdfaff;
   background-position-x: 2px; // Prevent the decoration background from overlapping left decoration line.
 
-  // Make position: absolute; for pseudo elements work in a way that
+  // Make position: absolute; to let pseudo elements work in a way that
   //  they have the correct height or width when using value of 100%.
   position: relative;
 
