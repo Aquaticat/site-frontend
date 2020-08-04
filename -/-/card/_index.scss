@@ -15,6 +15,7 @@
   background-color: #fdfaff;
   background-position-x: 2px;
 
+  // Left decoration line.
   &::before {
     /* Make the pseudo element valid. */
     content: '';
@@ -28,6 +29,7 @@
     background-color: #f1c8ff;
   }
 
+  // Bottom decoration line.
   &::after {
     /* Make the pseudo element valid. */
     content: '';
