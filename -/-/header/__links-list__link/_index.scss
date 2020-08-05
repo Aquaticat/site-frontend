@@ -3,7 +3,7 @@
   transition: color 0.2s;
 
   // When dark background is not below it
-  @media (max-width: 1024px) {
+  @media (width < 1024px) {
     color: #665c70;
 
     &:hover {
@@ -11,7 +11,7 @@
     }
   }
   // When dark background is below it
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     color: #fdfaff;
 
     &:hover {
