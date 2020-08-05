@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-sass-guidelines",
   "rules": {
+    "max-nesting-depth": 2,
     "order/order": [["dollar-variables"], {"unspecified": "ignore"}],
     "order/properties-alphabetical-order": false,
     "selector-class-pattern": null

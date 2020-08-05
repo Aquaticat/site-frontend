@@ -1,12 +1,11 @@
 @use '__action';
 @use '__action-icon';
 @use '__action-text';
+@use '__action-wrapper';
 @use '__actions';
-@use '__content';
 @use '__description';
 @use '__icon';
-@use '__inner';
-@use '__inner-test';
+@use '__icon-wrapper';
 @use '__text-content';
 @use '__title';
 
@@ -14,11 +13,29 @@
   // Set the size of the element
   display: block; // Default is inline due to "a" tag.
   width: 100%;
-  height: 96px;
+  @at-root {
+    :root {
+      --card-inner-height: 72px; // Height without padding.
+    }
+  }
+  height: var(--card-inner-height); // box-sizing is now content-box, so inner height is okay. Full height (height with padding) is this plus two paddings.
+
+  $card-padding: 12px;
+  padding: $card-padding;
 
   // Decoration background
   background-color: #fdfaff;
   background-position-x: 2px; // Prevent the decoration background from overlapping left decoration line.
+
+  // Eye candy on hover
+  &:hover {
+    // Decoration background color change
+    background-color: #fefcff; // TODO: Fix the problem of background color change only working in the middle.
+    // TODO: .card__description color change
+
+  }
+
+  //transition: background-color 0.5s;
 
   // Make position: absolute; to let pseudo elements work in a way that
   //  they have the correct height or width when using value of 100%.
@@ -26,6 +43,9 @@
 
   // Left decoration line.
   &::before {
+    top: 0;
+    left: 0;
+
     // Remove the pseudo element from the flow.
     position: absolute;
 
@@ -66,5 +86,9 @@
 
     // Color of the parallelogram
     background-color: #c475f5;
+
+    &:hover {
+      background-color: #f1c8ff;
+    }
   }
 }

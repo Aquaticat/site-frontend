@@ -1,0 +1,10 @@
+.card__icon-wrapper {
+  height: 100%;
+  width: var(--card-inner-height);
+
+  float: left;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

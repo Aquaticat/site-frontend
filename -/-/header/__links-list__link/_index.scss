@@ -1,14 +1,23 @@
 .header__links-list__link {
-  @media (min-width: 1024px) {
-    color: #fff;
-  }
+  // Color animation on hover
+  transition: color 0.2s;
+
+  // When dark background is not below it
   @media (max-width: 1024px) {
     color: #665c70;
 
     &:hover {
       color: #7f4cb2;
     }
-    transition: color 0.2s;
   }
+  // When dark background is below it
+  @media (min-width: 1024px) {
+    color: #fdfaff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
   text-decoration-line: underline;
 }

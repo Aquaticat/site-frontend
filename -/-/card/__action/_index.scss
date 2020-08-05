@@ -1,9 +1,81 @@
 .card__action {
-  background-color: unset;
+  //background-color: unset;
   border: unset;
   display: inline-flex;
   align-items: center;
   // TODO: Migrate to position:absolute instead of flexbox.
   //  flex works, but then the size of individual action does not go around text.
   //  This is not good for placing them together in a column.
+  height: 32px;
+  width: 100%;
+  background-position-x: 2px;
+  background-color: #fefbff;
+
+  &:hover {
+    background-color: #fff;
+
+    &::before,
+    &::after {
+      opacity: 0.4;
+    }
+  }
+
+  position: relative;
+
+  // Left decoration line.
+  &::before {
+    opacity: 0;
+    transition: opacity 0.2s;
+
+    top: 0;
+    left: 0;
+
+    // Remove the pseudo element from the flow.
+    position: absolute;
+
+    // Make the pseudo element valid.
+    content: '';
+
+    // Set the size of the pseudo element.
+    display: block; // Default is inline.
+    width: 2px;
+    height: 100%;
+
+    // Make it a parallelogram.
+    transform: skewY(-45deg);
+
+    // Color of the parallelogram
+    background-color: #f1c8ff;
+  }
+
+  // Bottom decoration line.
+  &::after {
+    opacity: 0;
+    transition: opacity 0.2s;
+
+    // Remove the pseudo element from the flow.
+    position: absolute;
+
+    // Set the position of the pseudo element.
+    top: 100%;
+    left: 0;
+
+    // Make the pseudo element valid.
+    content: '';
+
+    // Set the size of the pseudo element.
+    display: block; // Default is inline.
+    width: 100%;
+    height: 2px;
+
+    // Make it a parallelogram.
+    transform: skewX(-45deg);
+
+    // Color of the parallelogram
+    background-color: #c475f5;
+
+    &:hover {
+      background-color: #f1c8ff;
+    }
+  }
 }
