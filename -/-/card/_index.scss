@@ -12,7 +12,7 @@
 .card {
   // Set the size of the element
   display: block; // Default is inline due to "a" tag.
-  width: 100%;
+
   @at-root {
     :root {
       --card-inner-height: 72px; // Height without padding.
