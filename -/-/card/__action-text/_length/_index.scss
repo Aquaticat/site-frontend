@@ -1,0 +1,23 @@
+.card__action-text_length_very-short,
+.card__action-text_length_short,
+.card__action-text_length_full {
+  display: none;
+}
+
+@media (width <= 632px) {
+  .card__action-text_length_very-short {
+    display: inline;
+  }
+}
+
+@media (width > 632px) and (width < 1024px) {
+  .card__action-text_length_short {
+    display: inline;
+  }
+}
+
+@media (width >= 1024px) {
+  .card__action-text_length_full {
+    display: inline;
+  }
+}
