@@ -30,8 +30,8 @@
   // Eye candy on hover
   &:hover {
     // Decoration background color change
-    background-color: #fefcff; // TODO: Fix the problem of background color change only working in the middle.
-    // TODO: .card__description color change
+    background-color: #fefcff; // FIXED_TODO(Fix the problem of background color change only working in the middle): fixed using &:hover instead of :hover
+    // WONTFIX_TODO(.card__description color change): not necessary, not great experience improvement
 
   }
 

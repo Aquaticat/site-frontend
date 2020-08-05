@@ -1,5 +1,7 @@
+@use 'creation-date';
 @use 'documentation';
 @use 'github';
+@use 'update-date';
 
 .card__action-icon {
   //position: absolute;

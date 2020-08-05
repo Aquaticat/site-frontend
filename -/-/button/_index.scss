@@ -1,2 +1,6 @@
 @use '__icon';
 @use '__text';
+
+.button:hover {
+  cursor: pointer;
+}

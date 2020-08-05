@@ -1,7 +1,7 @@
 .card__action {
   //background-color: unset;
   border: unset;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   // TODO: Migrate to position:absolute instead of flexbox.
   //  flex works, but then the size of individual action does not go around text.
