@@ -1,0 +1,18 @@
+@use '__sub-title';
+
+@use '../-/font';
+
+.h1 {
+  color: #7f4ce5;
+  @include font.primary-text(24px);
+
+  // override(h1): margin-block
+  margin-block: {
+    start: unset;
+    end: unset;
+  }
+
+  + .h1__sub-title {
+    margin-block-start: 1rem;
+  }
+}

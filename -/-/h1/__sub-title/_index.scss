@@ -1,0 +1,6 @@
+@use '../../-/font';
+
+.h1__sub-title {
+  color: #665c70;
+  @include font.primary-text(16px);
+}
