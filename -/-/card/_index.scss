@@ -22,11 +22,11 @@
 
   text-decoration-line: none;
 
-  @at-root {
-    :root {
-      --icon-wrapper-width: 72px; // Height without padding.
-    }
-  }
+  //@at-root {
+  //  :root {
+  //    --icon-wrapper-width: 72px; // Height without padding.
+  //  }
+  //}
   //height: var(--card-inner-height); // <del>box-sizing is now content-box, so inner height is okay. Full height (height with padding) is this plus two paddings.</del> Can't set height for this, (if set) would result in it being too short for lower vw in responsive design.
 
   $card-padding: 12px;
@@ -99,5 +99,9 @@
     &:hover {
       background-color: #f1c8ff;
     }
+  }
+
+  + * {
+    margin-block-start: 1rem;
   }
 }

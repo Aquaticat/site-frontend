@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aquaticat</title>
+  <link rel="stylesheet" href="../index.css">
+  <link rel="icon" href="../-/logo/index-32.png" sizes="32x32">
+  <link rel="icon" href="../-/logo/index-128.png" sizes="128x128">
+  <link rel="icon" href="../-/logo/index-152.png" sizes="152x152">
+  <link rel="icon" href="../-/logo/index-167.png" sizes="167x167">
+  <link rel="icon" href="../-/logo/index-180.png" sizes="180x180">
+  <link rel="icon" href="../-/logo/index-192.png" sizes="192x192">
+  <link rel="icon" href="../-/logo/index-196.png" sizes="196x196">
+</head>
+<body class="body">
+
+<!-- Add empty script tag to prevent FOUC in Firefox. -->
+<script>void (0);</script>
+
+<div class="background body__background" aria-hidden="true">
+  <img
+      class="background__item body__background-item
+         body__background-for-header"
+      src="../-/body/__background-for-header/-.svg" alt=""
+  >
+  <img
+      class="background__item body__background-item body__background-for-empty-space-on-the-left"
+      src="../-/body/__background-for-empty-space-on-the-left/-.svg" alt=""
+  >
+</div>
+
+<!-- Create a new stacking context to ensure content is in
+the front of background. -->
+<div class="body__content">
+  <div class="body__information-header body__information-header_theme_warning">Sorry
+                                                                               visitor,
+                                                                               this site
+                                                                               is
+                                                                               currently
+                                                                               under
+                                                                               construction.
+                                                                               Some
+                                                                               functionalities
+                                                                               may not
+                                                                               work.
+  </div>
+  <header class="header">
+    <a class="brand header__brand" href="/index.html">
+      <img class="logo brand__logo" src="../-/logo/index.svg" alt="">
+      <span class="logo-text brand__logo-text">Aquaticat</span>
+    </a>
+    <ul class="links-list header__links-list">
+      <li class="links-list__item header__links-list__item">
+        <a
+            class="link links-list__link header__links-list__link"
+            href="https://github.com/aquaticat/"
+        >projects</a><!--/projects.html TODO: Build my own project page. -->
+      </li>
+      <li class="links-list__item header__links-list__item">
+        <a
+            class="link links-list__link header__links-list__link"
+            href="/blog.html"
+        >blog</a>
+      </li>
+      <li class="links-list__item header__links-list__item">
+        <a
+            class="link links-list__link header__links-list__link"
+            href="/about.html"
+        >about</a>
+      </li>
+      <li class="links-list__item header__links-list__item">
+        <a
+            class="link links-list__link header__links-list__link"
+            href="/contact.html"
+        >contact</a>
+      </li>
+    </ul>
+  </header>
+  <main class="body__main">
+    <section class="section">
+      <h2 class="h2">featured blog posts</h2>
+      <ul class="card__s">
+        <li class="card">
+          <a
+              class="card__link"
+              href="/blog/outerrobang-why-yet-another-randomizer.html"
+          ></a>
+          <div class="card__content">
+            <div class="card__icon-wrapper">
+              <img
+                  class="card__icon"
+                  src="../-/card/__icon/outerrobang.svg" alt=""
+              >
+            </div>
+            <article class="card__text-content">
+              <h3 class="card__title card__title_length_long-one-line">
+                Outerrobang: Why yet another randomizer?
+              </h3>
+              <p class="p card__description">
+                Random number generator, list randomizer etc.
+                <br>
+                Its name comes from “Interrobang”
+              </p>
+            </article>
+          </div>
+          <ul class="card__actions">
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-update-date"
+                    src="../-/card/__action-icon/update-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              updated <span class="card__action-text_text-transform-excluded">on</span> Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
+              updated Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
+              Aug 7
+            </span>
+              </a>
+            </li>
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-creation-date"
+                    src="../-/card/__action-icon/creation-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              created <span class="card__action-text_text-transform-excluded">on</span> Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
+              created Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
+              Aug 7
+            </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- TODO: Write another blog post.
+            Title "Hello World!", Content "Welcome to Aquaticat's blog. This is your (my) first post. Edit or delete it, then start writing!"
+            This can be a featured blog post and can be non-featured, too. -->
+      <!-- TODO: Write this sentence for blank state: "Nothing here but c<del>ricke</del><ins>a</ins>t."
+            Also draw a cat blinking and looking away after blinking for a certain time. -->
+    </section>
+    <section class="section">
+      <h2 class="h2">Aug 7</h2>
+      <ul class="card__s">
+        <li class="card">
+          <a
+              class="card__link"
+              href="outerrobang-why-yet-another-randomizer.html"
+          ></a>
+          <div class="card__content">
+            <div class="card__icon-wrapper">
+              <img
+                  class="card__icon"
+                  src="../-/card/__icon/outerrobang.svg" alt=""
+              >
+            </div>
+            <article class="card__text-content">
+              <h3 class="card__title card__title_length_long-one-line">
+                Outerrobang: Why yet another randomizer?
+              </h3>
+              <p class="p card__description">
+                Random number generator, list randomizer etc.
+                <br>
+                Its name comes from “Interrobang”
+              </p>
+            </article>
+          </div>
+          <ul class="card__actions">
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-update-date"
+                    src="../-/card/__action-icon/update-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              updated <span class="card__action-text_text-transform-excluded">on</span> Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
+              updated Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
+              Aug 7
+            </span>
+              </a>
+            </li>
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-creation-date"
+                    src="../-/card/__action-icon/creation-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              created <span class="card__action-text_text-transform-excluded">on</span> Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
+              created Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
+              Aug 7
+            </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="card">
+          <a
+              class="card__link"
+              href="hello-world.html"
+          ></a>
+          <div class="card__content">
+            <div class="card__icon-wrapper">
+              <img
+                  class="card__icon"
+                  src="../-/card/__icon/aquaticat.svg" alt=""
+              >
+            </div>
+            <article class="card__text-content">
+              <h3 class="card__title card__title_length_long-one-line">
+                Hello, World!
+              </h3>
+              <p class="p card__description">
+                Welcome to Aquaticat's blog. This is your (my) first post. Edit or delete it, then start writing!
+              </p>
+            </article>
+          </div>
+          <ul class="card__actions">
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-update-date"
+                    src="../-/card/__action-icon/update-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              updated <span class="card__action-text_text-transform-excluded">on</span> Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
+              updated Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
+              Aug 7
+            </span>
+              </a>
+            </li>
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-creation-date"
+                    src="../-/card/__action-icon/creation-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              created <span class="card__action-text_text-transform-excluded">on</span> Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
+              created Aug 7
+            </span>
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
+              Aug 7
+            </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- TODO: Write another blog post.
+            Title "Hello World!", Content "Welcome to Aquaticat's blog. This is your (my) first post. Edit or delete it, then start writing!"
+            This can be a featured blog post and can be non-featured, too. -->
+      <!-- TODO: Write this sentence for blank state: "Nothing here but c<del>ricke</del><ins>a</ins>t."
+            Also draw a cat blinking and looking away after blinking for a certain time. -->
+    </section>
+  </main>
+</div>
+</body>
+</html>

@@ -12,4 +12,7 @@
 
   // Override default CSS style margin: 8
   margin: 0;
+
+  // Prevent cropping .body__background in the middle when .body__content height is too short.
+  min-height: 100vh;
 }

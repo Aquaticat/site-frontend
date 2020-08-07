@@ -6,7 +6,7 @@
 
   // Spacing between p and other block element
   + * {
-    margin-block-start: 0.5rem;
+    margin-block-start: 0.75rem;
   }
 
   // Color
@@ -23,7 +23,7 @@
   }
 
   // Higher line-height means more space between paragraphs and between lines.
-  line-height: 1.2em;
+  line-height: 1.5em;
 
   // -
   @include font.background-ellipse-for-dark-text-on-non-light-background();
