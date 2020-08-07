@@ -3,22 +3,31 @@
 @use '__action-text';
 @use '__action-wrapper';
 @use '__actions';
+@use '__content';
 @use '__description';
 @use '__icon';
 @use '__icon-wrapper';
+@use '__link';
+@use '__s';
 @use '__text-content';
 @use '__title';
 
 .card {
   // Set the size of the element
-  display: block; // Default is inline due to "a" tag.
+  display: flex; // Default is inline due to "a" tag.
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  justify-content: space-between;
+
+  text-decoration-line: none;
 
   @at-root {
     :root {
-      --card-inner-height: 72px; // Height without padding.
+      --icon-wrapper-width: 72px; // Height without padding.
     }
   }
-  height: var(--card-inner-height); // box-sizing is now content-box, so inner height is okay. Full height (height with padding) is this plus two paddings.
+  //height: var(--card-inner-height); // <del>box-sizing is now content-box, so inner height is okay. Full height (height with padding) is this plus two paddings.</del> Can't set height for this, (if set) would result in it being too short for lower vw in responsive design.
 
   $card-padding: 12px;
   padding: $card-padding;

@@ -4,6 +4,7 @@
     "max-nesting-depth": 2,
     "order/order": [["dollar-variables"], {"unspecified": "ignore"}],
     "order/properties-alphabetical-order": false,
+    "scss/at-mixin-pattern": false,
     "selector-class-pattern": null
   },
   "ignoreFiles": ["/node_modules/**", "/bin/**" ,"**/*.*", "!**/*.scss"]

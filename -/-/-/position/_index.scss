@@ -1,0 +1,14 @@
+@mixin horizontally-centered-with-margin--auto() {
+  $auto: auto;
+  margin: {
+    left: $auto;
+    right: $auto;
+  }
+}
+
+@mixin horizontally-minimum-padded-with-padding($minimum-horizontal-padding) {
+  padding: {
+    left: $minimum-horizontal-padding;
+    right: $minimum-horizontal-padding;
+  }
+}

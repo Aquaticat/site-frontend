@@ -1,9 +1,7 @@
 .header__links-list__link {
-  // Color animation on hover
-  transition: color 0.2s;
-
+  // Colors
   // When dark background is not below it
-  @media (width < 1024px) {
+  @media (max-width: 1023.99px) {
     color: #665c70;
 
     &:hover {
@@ -11,13 +9,11 @@
     }
   }
   // When dark background is below it
-  @media (width >= 1024px) {
+  @media (min-width: 1024px) {
     color: #fdfaff;
 
     &:hover {
       color: #fff;
     }
   }
-
-  text-decoration-line: underline;
 }

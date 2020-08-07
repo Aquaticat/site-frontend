@@ -1,0 +1,6 @@
+@mixin fill-parent($top-bottom-left-right-space: 0) {
+  top: $top-bottom-left-right-space;
+  bottom: $top-bottom-left-right-space;
+  left: $top-bottom-left-right-space;
+  right: $top-bottom-left-right-space;
+}

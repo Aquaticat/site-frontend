@@ -1,4 +1,9 @@
 .card__action {
+  // To make "a" have proper size as if "button" is used.
+  box-sizing: border-box;
+  padding: 12px;
+  text-decoration-line: none;
+
   //background-color: unset;
   border: unset;
   display: flex;
@@ -6,14 +11,25 @@
   // TODO: Migrate to position:absolute instead of flexbox.
   //  flex works, but then the size of individual action does not go around text.
   //  This is not good for placing them together in a column.
-  height: 32px;
+
+  @media (max-width: 784px) {
+    height: 48px;
+    justify-content: center;
+    //width: auto;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+  @media (min-width: 784.01px) {
+    height: 32px;
+    justify-content: flex-start;
+  }
+
   width: 100%;
   background-position-x: 2px;
-  background-color: #fefbff;
+  background-color: #fff;
 
-  &:hover {
-    background-color: #fff;
-
+  &:hover,
+  &:active {
     &::before,
     &::after {
       opacity: 0.4;

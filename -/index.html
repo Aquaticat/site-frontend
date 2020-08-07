@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aquaticat</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="-/logo/index-32.png" sizes="32x32">
+  <link rel="icon" href="-/logo/index-128.png" sizes="128x128">
+  <link rel="icon" href="-/logo/index-152.png" sizes="152x152">
+  <link rel="icon" href="-/logo/index-167.png" sizes="167x167">
+  <link rel="icon" href="-/logo/index-180.png" sizes="180x180">
+  <link rel="icon" href="-/logo/index-192.png" sizes="192x192">
+  <link rel="icon" href="-/logo/index-196.png" sizes="196x196">
 </head>
 <body class="body">
 
@@ -26,171 +33,373 @@
 <!-- Create a new stacking context to ensure content is in
 the front of background. -->
 <div class="body__content">
+  <div class="body__information-header body__information-header_theme_warning">Sorry
+                                                                               visitor,
+                                                                               this site
+                                                                               is
+                                                                               currently
+                                                                               under
+                                                                               construction.
+                                                                               Some
+                                                                               functionalities
+                                                                               may not
+                                                                               work.
+  </div>
   <header class="header">
-    <a class="brand header__brand" href="/-/index.html">
-      <img class="logo brand__logo" src="-/logo/-.svg" alt="">
+    <a class="brand header__brand" href="/index.html">
+      <img class="logo brand__logo" src="-/logo/index.svg" alt="">
       <span class="logo-text brand__logo-text">Aquaticat</span>
     </a>
-    <ul class="links-list">
+    <ul class="links-list header__links-list">
       <li class="links-list__item header__links-list__item">
         <a
-            class="links-list__link header__links-list__link"
-            href="projects.html"
-        >projects</a>
+            class="link links-list__link header__links-list__link"
+            href="https://github.com/aquaticat/"
+        >projects</a><!--/projects.html TODO: Build my own project page. -->
       </li>
       <li class="links-list__item header__links-list__item">
         <a
-            class="links-list__link header__links-list__link"
-            href="blog.html"
+            class="link links-list__link header__links-list__link"
+            href="/blog.html"
         >blog</a>
       </li>
       <li class="links-list__item header__links-list__item">
         <a
-            class="links-list__link header__links-list__link"
-            href="about.html"
+            class="link links-list__link header__links-list__link"
+            href="/about.html"
         >about</a>
       </li>
       <li class="links-list__item header__links-list__item">
         <a
-            class="links-list__link header__links-list__link"
-            href="contact.html"
+            class="link links-list__link header__links-list__link"
+            href="/contact.html"
         >contact</a>
       </li>
     </ul>
   </header>
   <main class="body__main">
-    <h2 class="h2">featured projects</h2>
-    <a class="card" href="https://outerroba.ng">
-      <div class="card__icon-wrapper">
-        <img
-            class="card__icon"
-            src="-/card/__icon/outerrobang.svg" alt=""
-        >
-      </div>
-      <article class="card__text-content">
-        <h3 class="card__title">Outerrobang (WIP)</h3>
-        <p class="card__description">Random number generator, list randomizer etc.
-                                     Its name comes from “Interrobang”
-        </p>
-      </article>
-      <ul class="card__actions">
-        <li class="card__action-wrapper">
-          <button class="button card__action">
-            <img
-                class="button__icon card__action-icon card__action-icon-github"
-                src="-/card/__action-icon/github.svg" alt=""
-            />
-            <span
-                class="button__text card__action-text card__action-text_length_full"
-            >
+    <section class="section">
+      <h2 class="h2">featured projects</h2>
+      <ul class="card__s">
+        <li class="card">
+          <a
+              class="card__link"
+              href="https://ou.terrobang.com"
+          ></a>
+          <div class="card__content">
+            <div class="card__icon-wrapper">
+              <img
+                  class="card__icon"
+                  src="-/card/__icon/outerrobang.svg" alt=""
+              >
+            </div>
+            <article class="card__text-content">
+              <h3 class="card__title card__title_length_short-one-line">
+                Ou.terrobang.com (WIP)
+              </h3>
+              <p class="p card__description">
+                Random number generator, list randomizer etc.
+                <br>
+                <!-- Its name comes from “Interrobang”-->
+                (Links might not work during WIP. They will be working soon.)
+              </p>
+            </article>
+          </div>
+          <ul class="card__actions">
+            <li class="card__action-wrapper">
+              <a
+                  class="button card__action"
+                  href="https://github.com/aquaticat/outerrobang-frontend/"
+              >
+                <img
+                    class="button__icon card__action-icon card__action-icon-github"
+                    src="-/card/__action-icon/github.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
               github repository
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
               github repo
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_very-short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
               github
             </span>
-          </button>
-        </li>
-        <li class="card__action-wrapper">
-          <button class="button card__action">
-            <img
-                class="button__icon card__action-icon card__action-icon-documentation"
-                src="-/card/__action-icon/documentation.svg" alt=""
-            />
-            <span
-                class="button__text card__action-text card__action-text_length_full"
-            >
+              </a>
+            </li>
+            <li class="card__action-wrapper">
+              <a
+                  class="button card__action"
+                  href="https://github.com/aquaticat/outerrobang-frontend/wiki/"
+              >
+                <img
+                    class="button__icon card__action-icon card__action-icon-documentation"
+                    src="-/card/__action-icon/documentation.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
               view documentation
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
               documentation
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_very-short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
               docs
             </span>
-          </button>
+              </a><!-- TODO: Make these button links. -->
+            </li>
+          </ul>
         </li>
       </ul>
-    </a>
+    </section>
 
-    <h2 class="h2">featured blog posts</h2>
-    <a class="card" href="https://outerroba.ng">
-      <div class="card__icon-wrapper">
-        <img
-            class="card__icon"
-            src="-/card/__icon/outerrobang.svg" alt=""
-        >
-      </div>
-      <article class="card__text-content">
-        <h3 class="card__title">Outerrobang: Why yet another randomizer?</h3>
-        <p class="card__description">Random number generator, list randomizer etc.
-                                     Its name comes from “Interrobang”
-        </p>
-      </article>
-      <ul class="card__actions">
-        <li class="card__action-wrapper">
-          <button class="button card__action">
-            <img
-                class="button__icon card__action-icon card__action-icon-update-date"
-                src="-/card/__action-icon/update-date.svg" alt=""
-            />
-            <span
-                class="button__text card__action-text card__action-text_length_full"
-            >
-              updated on Jul 29
+    <section class="section">
+      <h2 class="h2">featured blog posts</h2>
+      <ul class="card__s">
+        <li class="card">
+          <a
+              class="card__link"
+              href="/blog/outerrobang-why-yet-another-randomizer.html"
+          ></a>
+          <div class="card__content">
+            <div class="card__icon-wrapper">
+              <img
+                  class="card__icon"
+                  src="-/card/__icon/outerrobang.svg" alt=""
+              >
+            </div>
+            <article class="card__text-content">
+              <h3 class="card__title card__title_length_long-one-line">
+                Outerrobang: Why yet another randomizer?
+              </h3>
+              <p class="p card__description">
+                Random number generator, list randomizer etc.
+                <br>
+                Its name comes from “Interrobang”
+              </p>
+            </article>
+          </div>
+          <ul class="card__actions">
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-update-date"
+                    src="-/card/__action-icon/update-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              updated <span class="card__action-text_text-transform-excluded">on</span> Jul 29
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
               updated Jul 29
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_very-short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
               Jul 29
             </span>
-          </button>
-        </li>
-        <li class="card__action-wrapper">
-          <button class="button card__action">
-            <img
-                class="button__icon card__action-icon card__action-icon-creation-date"
-                src="-/card/__action-icon/creation-date.svg" alt=""
-            />
-            <span
-                class="button__text card__action-text card__action-text_length_full"
-            >
-              created on Jul 28
+              </a>
+            </li>
+            <li class="card__action-wrapper">
+              <a class="button card__action">
+                <img
+                    class="button__icon card__action-icon card__action-icon-creation-date"
+                    src="-/card/__action-icon/creation-date.svg" alt=""
+                />
+                <span
+                    class="button__text card__action-text card__action-text_length_full"
+                >
+              created <span class="card__action-text_text-transform-excluded">on</span> Jul 28
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_short"
+                >
               created Jul 28
             </span>
-            <span
-                class="button__text card__action-text card__action-text_length_very-short"
-            >
+                <span
+                    class="button__text card__action-text card__action-text_length_very-short"
+                >
               Jul 28
             </span>
-          </button>
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
-    </a>
-    <!-- TODO: Write another blog post.
-          Title "Hello World!", Content "Welcome to Aquaticat's blog. This is your (my) first post. Edit or delete it, then start writing!"
-          This can be a featured blog post and can be non-featured, too. -->
-    <!-- TODO: Write this sentence for blank state: "Nothing here but c<del>ricke</del><ins>a</ins>t."
-          Also draw a cat blinking and looking away after blinking for a certain time. -->
+      <!-- TODO: Write another blog post.
+            Title "Hello World!", Content "Welcome to Aquaticat's blog. This is your (my) first post. Edit or delete it, then start writing!"
+            This can be a featured blog post and can be non-featured, too. -->
+      <!-- TODO: Write this sentence for blank state: "Nothing here but c<del>ricke</del><ins>a</ins>t."
+            Also draw a cat blinking and looking away after blinking for a certain time. -->
+    </section>
+
+    <section class="section">
+      <h2 class="h2">about Aquaticat</h2>
+      <p class="p">Hi there,</p>
+      <p class="p">
+        I
+        <mark class="mark mark_theme_design">design</mark>
+        and
+        <mark class="mark mark_theme_dev">develop</mark>
+        software. Here are my skills:
+      </p>
+      <article class="section__design-and-dev-lists">
+        <ul class="ul section__design-and-dev-list">
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_design"
+                href="https://www.figma.com"
+                title="An interface design tool. I chose this for its availability on all major desktop platforms."
+            >Figma</a>
+            beginner
+          </li>
+        </ul>
+        <ul class="ul section__design-and-dev-list">
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://en.bem.info"
+                title="A component-based approach to web development."
+            >BEM</a>
+            beginner
+          </li>
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://whatwg.org/" title="Markup language for web documents."
+            >HTML</a>
+            beginner
+          </li>
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://www.w3.org/Style/CSS/"
+                title="Language for styling web documents"
+            >CSS</a>
+            beginner
+            <ul class="ul">
+              <li class="ul__li">
+                <a
+                    class="mark mark_theme_dev"
+                    href="https://sass-lang.com/"
+                    title="CSS with superpowers"
+                >Sass (SCSS)</a>
+                beginner
+              </li>
+              <li class="ul__li">
+                <a
+                    class="mark mark_theme_dev"
+                    href="https://stylelint.io/" title="Linter for stylesheets"
+                >Stylelint</a>
+                beginner
+              </li>
+            </ul>
+          </li>
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://tc39.es/"
+                title="Scripting language not just for frontend web development"
+            >JavaScript</a>
+            beginner
+            <ul class="ul">
+              <li class="ul__li">
+                <a
+                    class="mark mark_theme_dev"
+                    href="https://www.typescriptlang.org/"
+                    title="Typed JavaScript"
+                >TypeScript</a>
+              </li>
+              <li class="ul__li">
+                <a
+                    class="mark mark_theme_dev"
+                    href="https://eslint.org/"
+                    title="Linter for JavaScript and TypeScript"
+                >ESLint</a>
+                beginner
+              </li>
+              <li class="ul__li">
+                <a
+                    class="mark mark_theme_dev"
+                    href="https://prettier.io/"
+                    title="Code formatter"
+                >Prettier</a>
+                beginner
+              </li>
+            </ul>
+          </li>
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://yarnpkg.com/"
+                title="Deterministic package manager"
+            >Yarn</a>
+            beginner
+          </li>
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+                title="General-purpose programming language"
+            >C#</a>
+            beginner
+            <ul class="ul">
+              <li class="ul__li">
+                <a
+                    class="mark mark_theme_dev"
+                    href="https://unity.com"
+                    title="Game development platform"
+                >Unity</a>
+                beginner
+              </li>
+            </ul>
+          </li>
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://www.python.org/"
+                title="Widely used programming language"
+            >Python</a>
+            beginner
+          </li>
+          <li class="ul__li">
+            <a
+                class="mark mark_theme_dev"
+                href="https://www.openbsd.org"
+                title="UNIX-like operating system emphasized on security."
+            >OpenBSD</a>
+            beginner
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="section">
+      <h2 class="h2">contact Aquaticat</h2>
+      <p class="p">Find me</p>
+      <ul class="ul">
+        <li class="ul__li">by <a
+            class="link link_theme_plain"
+            href="mailto:contact@aquati.cat"
+        >Email</a></li>
+        <li class="ul__li">on <a
+            class="link link_theme_plain"
+            href="https://github.com/aquaticat/"
+        >GitHub</a></li>
+      </ul>
+    </section>
   </main>
 </div>
 </body>

@@ -1,6 +1,10 @@
+@use '../../-/size';
+
 .body__background {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  //overflow-x: hidden;
+  // Make the background expand to full width and full height in every direction,
+  //  Thus preserving all its content.
+  @include size.fill-parent();
+
+  // Do not show any background item parts positioned offscreen.
+  overflow: hidden;
 }

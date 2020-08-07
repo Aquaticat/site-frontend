@@ -1,13 +1,19 @@
-.h2 {
-  color: #7f59a5;
-  font: {
-    family: Arial, sans-serif;
-    size: 20px;
-    weight: normal;
-  }
-  letter-spacing: 0.05em;
-  text-transform: capitalize;
+@use '../-/font';
 
-  margin-block-start: 4rem;
-  margin-block-end: 1rem;
+.h2 {
+  // Color
+  color: #7f59a5;
+
+  // Font 20px
+  @include font.primary-text(20px);
+
+  // .h2 might get laid on top of background
+  @include font.background-ellipse-for-dark-text-on-non-light-background();
+
+  // override(h2): margin-block has their default weird values
+  margin-block-end: unset;
+
+  + * {
+    margin-block-start: 1rem;
+  }
 }

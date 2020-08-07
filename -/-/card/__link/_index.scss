@@ -1,0 +1,7 @@
+@use '../../-/size';
+
+.card__link {
+  position: absolute;
+
+  @include size.fill-parent();
+}

@@ -1,0 +1,27 @@
+@use '__li';
+
+.ul {
+  // Color
+  color: #52527a;
+
+  // Default appearance (font-family)
+  font-family: sans-serif;
+
+  letter-spacing: 0.02em;
+
+  @media (max-width: 784px) {
+    letter-spacing: unset;
+  }
+
+  // Override default CSS style for ul
+  //  Setting margin-block doesn't work in Chrome. Writing them separately works.
+  margin-block: {
+    start: unset;
+    end: unset;
+  }
+  padding-inline-start: 24px;
+
+  .ul__li {
+    margin-block-start: 0.75rem;
+  }
+}

@@ -1,6 +1,11 @@
 @use '__icon';
 @use '__text';
 
-.button:hover {
-  cursor: pointer;
+.button {
+  // override(button): By default, "button"s do not have pointer cursor on hover.
+  button {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

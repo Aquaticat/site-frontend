@@ -1,0 +1,12 @@
+.card__content {
+  display: flex;
+  justify-content: flex-start;
+  //@media (width < 600px) {}
+  //@media (width >= 600px) {
+  //  flex-basis: 512px;
+  //}
+
+  @media (min-width: 784px) {
+    flex-basis: 512px;
+  }
+}

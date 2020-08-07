@@ -1,8 +1,16 @@
 .body__background-for-header {
+  // Make it have the correct form and position, as designed.
   top: calc(-832px + 10vw);
   right: calc(-544px + (100vw - 768px) / 2);
   transform: rotate(-30deg);
-  @media (width > 632px) and (width < 1024px) {
-    visibility: hidden;
+
+  // TODO: Use relative units for all media queries.
+  // Hide it during this width range (632px < w < 1024px) to prevent layering dark text above dark background.
+  visibility: hidden;
+  @media (max-width: 632px) {
+    visibility: visible;
+  }
+  @media (min-width: 1024px) {
+    visibility: visible;
   }
 }

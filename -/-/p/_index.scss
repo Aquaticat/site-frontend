@@ -1,0 +1,30 @@
+@use '../-/font';
+
+.p {
+  // override(p): default margin-block
+  margin-block-end: unset;
+
+  // Spacing between p and other block element
+  + * {
+    margin-block-start: 0.5rem;
+  }
+
+  // Color
+  color: #52527a;
+
+  // Default appearance (font-family)
+  font-family: sans-serif;
+
+  // Pack letters more dense when width is narrow.
+  letter-spacing: 0.02em;
+
+  @media (max-width: 783.99px) {
+    letter-spacing: unset;
+  }
+
+  // Higher line-height means more space between paragraphs and between lines.
+  line-height: 1.2em;
+
+  // -
+  @include font.background-ellipse-for-dark-text-on-non-light-background();
+}

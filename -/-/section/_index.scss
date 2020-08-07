@@ -1,0 +1,12 @@
+@use '__design-and-dev-list';
+@use '__design-and-dev-lists';
+
+.section {
+  // Making it a flex to counter the effects of setting h2 and p inline-block, which resulted them to not have line break.
+  display: flex;
+  flex-direction: column;
+
+  + * {
+    margin-block-start: 4rem;
+  }
+}

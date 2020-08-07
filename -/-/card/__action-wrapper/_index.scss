@@ -1,3 +1,17 @@
- .card__action-wrapper {
-  height: 32px;
+.card__action-wrapper {
+  // Make action-wrappers {<strong>have the same width</strong> and take up as much space as possible with some space in the middle} side-by-side when they are both in the bottom row.
+  @media (min-width: 326px) and (max-width: 784px) {
+    flex-grow: 1;
+  }
+
+  // Make action-wrappers have more area to touch on a (generally) touchscreen.
+  @media (max-width: 784px) {
+    height: 48px;
+  }
+
+  // Make action-wrappers have less area to touch on a (generally) non-touch screen.
+  @media (min-width: 784.01px) {
+    height: 32px;
+  }
 }
+// TODO; This still looks awful. In column mode when viewport width is large, there is not enough padding.

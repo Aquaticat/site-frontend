@@ -3,9 +3,13 @@
 @use '__background-for-header';
 @use '__background-item';
 @use '__content';
+@use '__information-header';
 @use '__main';
 
 .body {
+  // Fix problem of .body__background cannot take up 100% of the document height.
+  position: relative;
+
+  // Override default CSS style margin: 8
   margin: 0;
-  overflow: hidden;
 }

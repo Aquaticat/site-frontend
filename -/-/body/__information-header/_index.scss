@@ -1,0 +1,28 @@
+@use '_theme';
+
+@use '../../-/position';
+
+.body__information-header {
+  // Glossy glass
+  opacity: 0.8;
+  backdrop-filter: blur(2px);
+
+  // Center align text
+  text-align: center;
+  line-height: 1.5rem;
+
+  // -
+  font-family: sans-serif;
+
+  // Align it to the top, with both ends touching the sides.
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  // Place it above all
+  z-index: 3;
+
+  // Minimum horizontal padding
+  @include position.horizontally-minimum-padded-with-padding(32px);
+}

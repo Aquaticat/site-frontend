@@ -1,0 +1,17 @@
+@mixin primary-text($font-size, $letter-spacing: 0.05em) {
+  font: {
+    size: $font-size;
+    family: Arial, sans-serif;
+    weight: normal;
+  }
+  letter-spacing: $letter-spacing;
+  text-transform: capitalize;
+}
+
+@mixin background-ellipse-for-dark-text-on-non-light-background($center-color: #fff) {
+  // Override default block-text-element {display: block;} to make background-image: radial-gradient work.
+  display: inline-block;
+  // When in a flexbox, align itself to the start to prevent itself from expanding the full width and breaking background-image: radial-gradient
+  align-self: flex-start;
+  background-image: radial-gradient(closest-side, transparentize($center-color, 0.7) calc(100% - 4px), transparentize($center-color, 1) 100%);
+}

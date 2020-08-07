@@ -1,25 +1,43 @@
 .card__actions {
+  // override(ul): no list indicator, no inline padding, no block margin
   list-style-type: none;
-
-  // Override ul default settings.
   padding-inline-start: 0;
   margin-block: {
     start: 0;
     end: 0;
   }
+
   // TODO: Migrate all margin/padding rules to logical CSS.
 
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  //flex-wrap: wrap;
+
+  column-gap: 16px;
+
+  //@media (width < 466px) {
+  //  flex-direction: column;
+  //}
+  @media (max-width: 784px) {
+    flex-basis: 100%;
+    row-gap: 8px;
+  }
+  @media (min-width: 784.01px) and (max-width: 1023.99px) {
+    flex-basis: 166px;
+  }
+  @media (min-width: 784.01px) {
+    flex-direction: column;
+  }
   //align-items: baseline;
   //margin: {
   //  top: 16px;
   //  bottom: 16px;
   //}
 
-  float: right;
+  //float: right;
 
-  height: calc(100%/* + 8px*/);
+  //height: calc(100% /* + 8px*/);
   //transform: translateY(-4px);
+
+  // TODO: Migrate back to not use flexbox
 }

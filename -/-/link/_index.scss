@@ -1,0 +1,15 @@
+@use '_theme';
+
+.link {
+  text: {
+    decoration: {
+      // Some .link s are not "a"
+      line: underline;
+      // More unobtrusive appearance
+      skip-ink: auto;
+    }
+  }
+
+  // &:hover color transition
+  transition: color 0.2s;
+}

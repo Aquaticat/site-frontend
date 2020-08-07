@@ -1,14 +1,15 @@
+@use '../../-/position';
+
 .body__main {
+  // Make the content readable. Eg: No lines of text spread across a large distance.
   max-width: 768px;
-  $auto: auto;
-  margin: {
-    left: $auto;
-    right: $auto;
-  }
-  $minimum-horizontal-padding: 32px;
-  padding: {
-    left: $minimum-horizontal-padding;
-    right: $minimum-horizontal-padding;
-    //top: 64px;
-  }
+
+  // Center it. Using dual auto margin technique.
+  @include position.horizontally-centered-with-margin--auto();
+
+  // Give it a horizontal padding so it always has minimum "padding" to both sides of it when viewport is narrow.
+  @include position.horizontally-minimum-padded-with-padding(32px);
+
+  // Space between body__main and header
+  padding-top: 80px;
 }

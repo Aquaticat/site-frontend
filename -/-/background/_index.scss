@@ -1,5 +1,7 @@
 @use '__item';
 
 .background {
+  // Remove it from the flow.
+  //  Otherwise background and content are going to overlay on each other.
   position: absolute;
 }

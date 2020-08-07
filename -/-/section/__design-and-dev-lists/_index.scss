@@ -1,0 +1,81 @@
+.section__design-and-dev-lists {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  $card-padding: 12px;
+  padding: $card-padding;
+
+  // Decoration background
+  background-color: #fdfaff;
+  background-position-x: 2px; // Prevent the decoration background from overlapping left decoration line.
+
+  // Eye candy on hover
+  &:hover {
+    // Decoration background color change
+    background-color: #fefcff; // FIXED_TODO(Fix the problem of background color change only working in the middle): fixed using &:hover instead of :hover
+    // WONTFIX_TODO(.card__description color change): not necessary, not great experience improvement
+
+  }
+
+  //transition: background-color 0.5s;
+
+  // Make position: absolute; to let pseudo elements work in a way that
+  //  they have the correct height or width when using value of 100%.
+  position: relative;
+
+  // Left decoration line.
+  &::before {
+    top: 0;
+    left: 0;
+
+    // Remove the pseudo element from the flow.
+    position: absolute;
+
+    // Make the pseudo element valid.
+    content: '';
+
+    // Set the size of the pseudo element.
+    display: block; // Default is inline.
+    width: 2px;
+    height: 100%;
+
+    // Make it a parallelogram.
+    transform: skewY(-45deg);
+
+    // Color of the parallelogram
+    background-color: #f1c8ff;
+  }
+
+  // Bottom decoration line.
+  &::after {
+    // Remove the pseudo element from the flow.
+    position: absolute;
+
+    // Set the position of the pseudo element.
+    top: 100%;
+    left: 0;
+
+    // Make the pseudo element valid.
+    content: '';
+
+    // Set the size of the pseudo element.
+    display: block; // Default is inline.
+    width: 100%;
+    height: 2px;
+
+    // Make it a parallelogram.
+    transform: skewX(-45deg);
+
+    // Color of the parallelogram
+    background-color: #c475f5;
+
+    &:hover {
+      background-color: #f1c8ff;
+    }
+  }
+}
+
+
+p + .section__design-and-dev-lists {
+  margin-block-start: 1rem;
+}

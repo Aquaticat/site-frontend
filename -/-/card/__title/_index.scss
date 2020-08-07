@@ -1,15 +1,16 @@
+@use '_length';
+
 .card__title {
   color: #6435cb;
   font: {
     family: Arial, sans-serif;
-    size: 20px;
+    size: 18px;
     weight: normal;
   }
-  letter-spacing: 0.05em;
 
   // Override default h3
   margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-end: 8px; // Giving margin-block-end new value to ensure least spacing between .card__title and .card__description.
 
   //vertical-align: top;
 }

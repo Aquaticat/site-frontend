@@ -1,4 +1,9 @@
 .body__content {
+  // Make z-index work on this element.
   position: relative;
+  // Place it above .body__background
   z-index: 2;
+
+  // Give it a bottom padding of 24px so the content does not end abruptly.
+  padding-bottom: 24px;
 }

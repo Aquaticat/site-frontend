@@ -4,19 +4,20 @@
   display: none;
 }
 
-@media (width <= 632px) {
+// TODO: Fix the issues of media queries firing at wrong width by accounting the scrollbar.
+@media (max-width: 465.99px) {
   .card__action-text_length_very-short {
     display: inline;
   }
 }
-
-@media (width > 632px) and (width < 1024px) {
+// max-width: 1023.99px doesn't work in Chrome. 1023.98px works.
+@media (min-width: 466px) and (max-width: 1023.98px) {
   .card__action-text_length_short {
     display: inline;
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
   .card__action-text_length_full {
     display: inline;
   }

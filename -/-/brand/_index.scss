@@ -2,10 +2,11 @@
 @use '__logo-text';
 
 .brand {
+  // Flexbox for combining the __logo and the __logo-text
   display: flex;
   align-items: center;
   gap: 8px;
 
-  // Remove link text underline for the logo text.
+  // override(a): Remove link text underline for the logo text.
   text-decoration-line: none;
 }
