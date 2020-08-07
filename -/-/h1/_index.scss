@@ -15,4 +15,14 @@
   + .h1__sub-title {
     margin-block-start: 1rem;
   }
+
+  display: inline-block;
+  align-self: flex-start;
+
+  line-height: 1.5em;
+  padding-inline-end: 4px;
+
+  background: #fff;
+  opacity: 0.8;
+  backdrop-filter: blur(4px);
 }

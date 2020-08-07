@@ -13,5 +13,5 @@
   display: inline-block;
   // When in a flexbox, align itself to the start to prevent itself from expanding the full width and breaking background-image: radial-gradient
   align-self: flex-start;
-  background-image: radial-gradient(closest-side, transparentize($center-color, 0.7) calc(100% - 8px), transparentize($center-color, 1) 100%);
+  background-image: radial-gradient(closest-side, transparentize($center-color, 0.7) 50%, transparentize($center-color, 1) 100%);
 }

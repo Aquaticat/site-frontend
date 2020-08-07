@@ -3,4 +3,5 @@
 .h1__sub-title {
   color: #665c70;
   @include font.primary-text(16px);
+  @include font.background-ellipse-for-dark-text-on-non-light-background();
 }
